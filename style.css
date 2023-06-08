@@ -1,0 +1,220 @@
+/* Reset des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styles généraux */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 1rem;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    }
+
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 30px;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 2rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  
+  .buttons {
+    margin-bottom: 1rem;
+  }
+  
+  .buttons button {
+    margin-right: 0.5rem;
+  }
+
+  .about-me {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-me .image {
+    flex: 1;
+  }
+  
+  .about-me .description {
+    flex: 2;
+    padding-left: 2rem;
+  }
+  
+  .about-me img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .about-me h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-me p {
+    margin-bottom: 1rem;
+  }
+
+  footer {
+  position: relative;
+}
+
+#btnScrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: lightgray;
+  border: none;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+#btnScrollToTop img {
+  width: 100%;
+  height: 100%;
+}
+
+#about {
+  border: 2px solid #000;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+#contact {
+  border: 2px solid #000;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+#projects {
+  text-align: center;
+}
+
+#projects h2.left-align {
+  text-align: left;
+}
+
+#projects {
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  display: inline-block;
+  width: calc(50% - 10px);
+  margin: 10px;
+}
+
+.skills-list {
+  text-align: center;
+}
+
+.skills-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+  background-color: #eaeaea;
+  color: #333;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 150px;
+  width: 300px;
+}
+
+.button:hover{
+  box-shadow: #000;
+}
+
+.button img {
+  margin-bottom: 5px;
+  height: 70%;
+  width: auto;
+}
+
+.button-main {
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.button-main:last-child {
+  margin-right: 0;
+}
+
+.button-main:hover{
+  background-color: tomato;
+}
+
+.SAE{
+  text-align: center;
+}
+
+.project-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}

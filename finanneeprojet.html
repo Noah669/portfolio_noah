@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet de fin d'année</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="img/diploma.png">
+</head>
+
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html#accueil">Accueil</a></li>
+                <li><a href="Home.html#about">À propos de moi</a></li>
+                <li><a href="Home.html#projects">Mes projets</a></li>
+                <li><a href="Home.html#contact">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Projets de fin d'année : </h2>
+        <div class="project-buttons">
+            <button onclick="show1erannee()" class = "button-main">Projet de fin de première année</button>
+            <button onclick="show2emeannee()" class="button-main">Projet de fin de deuxième année (à venir)</button>
+          </div>
+          <div id="1er">
+            <h3>SAE2.1256 Projet de fin de première année :</h3>
+          </div>
+          <div id="2eme" style="display: none;">
+            <h3>SAE4.? Projet de fin de deuxième année :</h3>
+            <p>A venir</p>
+          </div>
+    </section>
+
+    <section id="projects">
+        <h2  class="left-align">Voir d'autres projets</h2>
+        <div class="project-buttons">
+          <button onclick="showSchoolProjects()" class = "button-main">Projets Scolaires</button>
+          <button onclick="showPersoProjects()" class="button-main">Projets Personnels</button>
+        </div>
+        <div id="school-projects" class="button-container">
+          <a href="javaprojet.html" class="button">
+            <img src="img/IntelliJ.png" alt="Image bouton java">
+            <span>Projet fait en Java</span>
+          </a>
+          <a href="debianprojet.html" class="button">
+            <img src="img/debian.png" alt="Image bouton debian">
+            <span>Projet fait sur Debian</span>
+          </a>
+          <a href="sqlprojet.html" class="button">
+            <img src="img/postgresql.png" alt="Image bouton sql">
+            <span>Projet fait sur postgresql</span>
+          </a>
+          <a href="htmlprojet.html" class="button">
+            <img src="img/htmlcss.png" alt="Image bouton html">
+            <span>Projet fait en HTML/CSS</span>
+          </a>
+          <a href="finanneeprojet.html" class="button">
+            <img src="img/diploma.png" alt="Image bouton finannee">
+            <span>Projet final</span>
+          </a>
+        </div>
+        <div id="perso-projects" class="button-container" style="display: none;">
+          <a href="" class="button">
+            <img src="img/encours.png" alt="Image bouton encours">
+            <span>Projet en cours de création</span>
+          </a>
+          <a href="" class="button">
+            <img src="img/encours.png" alt="Image bouton encours">
+            <span>Projet en cours de création</span>
+          </a>
+          <a href="" class="button">
+            <img src="img/encours.png" alt="Image bouton encours">
+            <span>Projet en cours de création</span>
+          </a>
+          
+        </div>
+      </section>
+
+    <footer>
+        <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+        <button id="btnScrollToTop" onclick="scrollToTop()"><img src="img/fleche.png" alt="Remonter en haut"></button>
+      </footer>
+</body>

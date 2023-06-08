@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="img/home.png">
+</head>
+
+<body>
+    <header>
+        <h1>Mon Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#about">À propos de moi</a></li>
+                <li><a href="#projects">Mes projets</a></li>
+                <li><a href="#contact">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil">
+        <h2>Accueil</h2>
+        <p>Bienvenue sur mon portfolio. Je suis un étudiant  à la recherche de nouveaux projets intéressants. <br>
+        Vous trouverez ici tout d'abord mon cv avec mes expériences professionelles et mes diplômes ainsi que mes compétences. <br>
+        Et plus bas vous trouverez plusieurs projets que j'ai soit réalisé durant mes études soit durant mon temps personnel. <br>
+        Vous trouverez aussi mon mail et mon numéro de téléphone pour me contacter si vous êtes intéressé par mes compétences.
+        </p>
+    </section>
+
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <div class="about-me">
+          <div class="image">
+            <img src="img/Moi.jpg" alt="Ma photo">
+          </div>
+          <div class="description">
+            <h3>Introduction</h3>
+            <p>Je m'appelle DASSAC Noah. Je suis un étudiant en 1re année BUT Informatique. <br>
+                Je compte partir dans l'industrie du jeu vidéo pour créer mes propres jeux et inspirer les nouvelles générations comme les jeux m'ont inspiré.
+            </p>
+            <h3>Expérience Professionelle</h3>
+            <ul>
+                <li>
+                    <p>Le pré Saint Fiacre (Pézilla-la-Rivière,66) : 2010 - 2017 <br> 
+                        Caissier et production agricole <br> 
+                        Vente directe de produit en horticulture <br>
+                        Contact avec le client
+                    </p>
+                </li>
+                <li>
+                    <p>Véto del sol - Cabinet vétérinaire (Le Soler, 66) : Mars 2018 <br>
+                        Stage d'observation en cabinet vétérinaire <br>
+                        Accueil du client <br>
+                        Réconfort du client
+                    </p>
+                </li>
+            </ul>
+            <h3>Formation</h3>
+            <ul>
+                <li>
+                    <p>Lycée Aristide Maillol (Perpignan) : Septembre 2018 - Juillet 2022 <br>
+                        Obtention du Baccalauréat (Mention Assez-bien) <br>
+                        Obtention d'une attestation d'anglais de Cambridge (Mention B2)
+                    </p>
+                </li>
+                <li>
+                    <p>BUT Informatique - IUT2 Grenoble : Septembre 2022 - En cours<br>
+                        Apprentissage de matières comme Communication, SQL, Java, HTML, CSS, Gestion d'entreprise et Droit juridique.
+                    </p>
+                </li>
+            </ul>
+            <h3>Compétences</h3>
+            <ul class="skills-list">
+                <li><p> Word / Excel / PowerPoint</p></li>
+                <li><p>Création de site web (HTML - CSS)</p></li>
+                <li><p>Anglais</p></li>
+                <li><p>Gestion d'image (Photoshop)</p></li>
+                <li><p>Programmation objet (Java)</p></li>
+                <li><p>Programmation divers (Python)</p></li>
+                <li><p>Base de données (SQL)</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    <section id="projects">
+        <h2  class="left-align">Mes projets</h2>
+        <div class="project-buttons">
+          <button onclick="showSchoolProjects()" class = "button-main">Projets Scolaires</button>
+          <button onclick="showPersoProjects()" class="button-main">Projets Personnels</button>
+        </div>
+        <div id="school-projects" class="button-container">
+          <a href="javaprojet.html" class="button">
+            <img src="img/IntelliJ.png" alt="Image bouton java">
+            <span>Projet fait en Java</span>
+          </a>
+          <a href="debianprojet.html" class="button">
+            <img src="img/debian.png" alt="Image bouton debian">
+            <span>Projet fait sur Debian</span>
+          </a>
+          <a href="sqlprojet.html" class="button">
+            <img src="img/postgresql.png" alt="Image bouton sql">
+            <span>Projet fait sur postgresql</span>
+          </a>
+          <a href="htmlprojet.html" class="button">
+            <img src="img/htmlcss.png" alt="Image bouton html">
+            <span>Projet fait en HTML/CSS</span>
+          </a>
+          <a href="finanneeprojet.html" class="button">
+            <img src="img/diploma.png" alt="Image bouton finannee">
+            <span>Projet final</span>
+          </a>
+        </div>
+        <div id="perso-projects" class="button-container" style="display: none;">
+          <a href="" class="button">
+            <img src="img/encours.png" alt="Image bouton encours">
+            <span>Projet en cours de création</span>
+          </a>
+          <a href="" class="button">
+            <img src="img/encours.png" alt="Image bouton encours">
+            <span>Projet en cours de création</span>
+          </a>
+          <a href="" class="button">
+            <img src="img/encours.png" alt="Image bouton encours">
+            <span>Projet en cours de création</span>
+          </a>
+          
+        </div>
+      </section>
+    
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>N'hésitez pas à me contacter pour discuter de vos idées de projets : </p>
+        <p> Email : Noah.Dassac@gmail.com | Téléphone : 06 51 51 86 95 </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+        <button id="btnScrollToTop" onclick="scrollToTop()"><img src="img/fleche.png" alt="Remonter en haut"></button>
+      </footer>
+</body>
+
+</html>
