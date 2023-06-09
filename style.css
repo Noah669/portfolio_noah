@@ -19,6 +19,8 @@
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    position: relative;
+  height: 125px;
     }
 
   
@@ -242,5 +244,10 @@
 
 h2{
   border-bottom: solid orange;
+  width: fit-content;
+}
+
+.sommaire:hover{
+  border-bottom: solid tomato;
   width: fit-content;
 }
