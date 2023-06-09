@@ -235,3 +235,12 @@
   height: auto;
   width: 45%;
 }
+
+#introaccueil{
+  margin-left: 35px;
+}
+
+h2{
+  border-bottom: solid orange;
+  width: fit-content;
+}
